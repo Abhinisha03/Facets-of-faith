@@ -1,0 +1,179 @@
+
+.wrappertesti {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardtesti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffe743;
+    padding: 50px 35px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 16px 1px rgb(212, 210, 210);
+}
+
+.abouttesti-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 350px;
+    z-index: 10;
+}
+
+.imagetesti-wrapper {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+    overflow: hidden;
+}
+
+.abouttesti {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 70px 0;
+    padding-right: 2px;
+}
+
+.paratesti {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: hsl(240, 38%, 20%);
+    overflow: hidden;
+    transition: 450ms;
+}
+
+@keyframes funtoos {
+    from {
+        height: 0px;
+        opacity: 0;
+    }
+
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.nametesti {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.professiontesti {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+}
+
+.imagetesti {
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: none;
+    flex-direction: row;
+    transition: 1s;
+}
+
+.slidertesti-button {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    width: 70px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0px 5px 16px 1px rgb(179, 179, 179);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-30%);
+
+}
+
+@media (max-width:768px) {
+    body {
+        background-color: white;
+    }
+
+    .cardtesti {
+        justify-content: center;
+        box-shadow: none;
+    }
+
+    .abouttesti-wrapper {
+        order: 2;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .abouttesti {
+        align-items: center;
+        text-align: center;
+        padding: 25px 25px;
+    }
+
+    .imagetesti-wrapper {
+        order: 1;
+    }
+
+    .paratesti {
+        padding-top: 25px;
+    }
+
+    .slidertesti-button {
+        margin-bottom: -390px;
+        z-index: 1;
+        margin-left: -20px;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    .paratesti {
+        font-size: 22px;
+        margin: 5px 0px;
+        padding-top: 50px;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .cardtesti {
+        justify-content: center;
+        box-shadow: none;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .slidertesti-button {
+        margin-bottom: -390px;
+        z-index: 1;
+        margin-left: -20px;
+    }
+}
